@@ -1,0 +1,552 @@
+/*
+Template Name: Ubold - Bootstrap 4 Landing Page Tamplat
+Author: CoderThemes
+Email: coderthemes@gmail.com
+File: Main scss file
+*/
+/*******************************
+01.Helper
+02.Navbar
+03.Home
+04.Features
+05.Demo
+06.Pricing
+07.Faqs
+08.Testionial
+09.Contact
+10.Cta
+11.Footer
+12.Responsive
+********************************/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700,900");
+@font-face {
+  font-family: "Cerebri Sans,sans-serif";
+  src: url("../fonts/cerebrisans-light.eot");
+  src: local("Cerebri-sans Light"), url("../fonts/cerebrisans-light.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Cerebri Sans,sans-serif";
+  src: url("../fonts/cerebrisans-regular.eot");
+  src: local("Cerebri-sans Regular"), url("../fonts/cerebrisans-regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Cerebri Sans,sans-serif";
+  src: url("../fonts/cerebrisans-medium.eot");
+  src: local("Cerebri-sans Medium"), url("../fonts/cerebrisans-medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Cerebri Sans,sans-serif";
+  src: url("../fonts/cerebrisans-semibold.eot");
+  src: local("Cerebri-sans Semibold"), url("../fonts/cerebrisans-semibold.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Cerebri Sans,sans-serif";
+  src: url("../fonts/cerebrisans-bold.eot");
+  src: local("Cerebri-sans Bold"), url("../fonts/cerebrisans-bold.woff") format("woff");
+  font-weight: 700;
+}
+
+/*******************
+    1.Helper
+*******************/
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cerebri Sans,sans-serif";
+}
+
+h3 {
+  line-height: 30px;
+}
+
+a {
+  text-decoration: none !important;
+  outline: none;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.section {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.section-sm {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.bg-gradient {
+  background: -webkit-gradient(linear, right top, left top, from(#53328e), to(#3e1e8c));
+  background: linear-gradient(to left, #53328e, #3e1e8c);
+}
+
+.bg-light {
+  background-color: #f6f8fa !important;
+}
+
+.bg-shape {
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  right: 0px;
+}
+
+.bg-shape img {
+  width: 100%;
+}
+
+.btn {
+  font-family: "Cerebri Sans,sans-serif";
+}
+
+/**BACK TO TOP**/
+.back-to-top {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  display: none;
+  text-align: center;
+  z-index: 10000;
+  border-radius: 3px;
+  background-color: #673ab7;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.back-to-top i {
+  color: #ffffff;
+  font-size: 22px;
+  display: block;
+  line-height: 30px;
+}
+
+/******************
+    2.Navbar
+*******************/
+.navbar-custom {
+  padding: 20px 0px;
+  width: 100%;
+  border-radius: 0px;
+  z-index: 999;
+  margin-bottom: 0px;
+  position: absolute;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-pills > a {
+  border-radius: 30px !important;
+  padding: 0.6rem 1.5rem;
+  font-size: 16px;
+  font-family: "Cerebri Sans,sans-serif";
+  margin: 0 5px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #f672a7 !important;
+}
+
+.topnav {
+  -webkit-box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.15);
+          box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.15);
+  z-index: 1;
+}
+
+/*******************
+    3.Home
+*******************/
+.bg-home {
+  position: relative;
+  padding: 160px 0px 140px 0px;
+}
+
+.home-center {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.home-desc-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.home-title .home-desc {
+  max-width: 605px;
+  font-size: 16px;
+}
+
+.home-title .subscribe input {
+  padding: 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 43px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.home-title .subscribe input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.home-title .subscribe input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.home-title .subscribe input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.home-title .subscribe input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.home-title .subscribe .btn {
+  min-height: 43px;
+}
+
+.home-title .subscribe .form-control:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.home-first-img {
+  position: relative;
+  z-index: 2;
+  max-width: 300px;
+}
+
+.home-second-img {
+  position: absolute;
+  max-width: 250px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 61px;
+  right: 0px;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.home-third-img {
+  position: absolute;
+  right: 0px;
+  max-width: 200px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0.7;
+}
+
+.clients {
+  position: relative;
+  top: -70px;
+  -webkit-box-shadow: 0 10px 35px 0 rgba(154, 161, 171, 0.1);
+          box-shadow: 0 10px 35px 0 rgba(154, 161, 171, 0.1);
+  border-radius: 8px;
+  margin-bottom: -70px;
+}
+
+.clients .client-images img {
+  margin: 10px auto;
+  opacity: 0.7;
+}
+
+/*******************
+   Changelogs
+********************/
+.changlog-list {
+  margin-bottom: 50px;
+}
+
+.changlog-list li {
+  line-height: 28px;
+}
+
+/*******************
+    5.demo
+********************/
+.demo-box {
+  padding: 30px 30px 0;
+  text-align: center;
+  position: relative;
+  background-color: #ffffff;
+  margin-top: 30px;
+}
+
+.demo-box:hover .demo-overlay {
+  display: block;
+}
+
+.demo-box img {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  -webkit-box-shadow: 0 1px 50px rgba(137, 143, 164, 0.35);
+          box-shadow: 0 1px 50px rgba(137, 143, 164, 0.35);
+}
+
+.demo-box > a {
+  display: block;
+}
+
+.demo-box-title {
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.sub-title {
+  font-size: 13px;
+  color: #7a7d84;
+  font-family: "Nunito", sans-serif;
+}
+
+.section-demo-light .demo-box {
+  background-color: #f5f5f5;
+}
+
+.demo-overlay {
+  position: absolute;
+  background-color: rgba(60, 70, 80, 0.8);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 3px;
+  display: none;
+  -webkit-transition: all ease-in-out .15s;
+  transition: all ease-in-out .15s;
+}
+
+.demo-overlay .demo-btn {
+  top: 50%;
+  margin-top: -19px;
+  position: relative;
+}
+
+.demo-overlay .demo-btn .btn {
+  font-weight: 600;
+  padding: .45rem 1.1rem;
+}
+
+/*******************
+    7.faqs
+********************/
+.faq-question-q-box {
+  height: 30px;
+  width: 30px;
+  color: #673ab7;
+  text-align: center;
+  border-radius: 50%;
+  float: left;
+  font-weight: 700;
+  line-height: 30px;
+  background-color: rgba(103, 58, 183, 0.15);
+}
+
+.faq-question {
+  margin-top: 0;
+  margin-left: 50px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.faq-answer {
+  margin-left: 50px;
+  font-size: 14.5px;
+}
+
+/*******************
+    8.testionial
+********************/
+.testi-box .testi-desc {
+  position: relative;
+  background-color: #f1f5f7;
+  border-radius: 5px;
+}
+
+.testi-box .testi-desc:before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #f1f5f7;
+  bottom: -6px;
+  left: 48px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.testi-box .testi-img .user-icons {
+  height: 48px;
+  width: 48px;
+  background-color: #f1f5f7;
+  color: #28282e;
+  text-align: center;
+  font-family: "Cerebri Sans,sans-serif";
+  font-weight: 700;
+  line-height: 48px;
+  border-radius: 50%;
+}
+
+.testi-box h5 {
+  margin-top: 7px;
+}
+
+/*******************
+    9.contact
+********************/
+.custom-form {
+  -webkit-box-shadow: 0 10px 35px 0 rgba(154, 161, 171, 0.1);
+          box-shadow: 0 10px 35px 0 rgba(154, 161, 171, 0.1);
+  border-radius: 8px;
+}
+
+.custom-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.custom-form .form-group .form-control {
+  height: 43px;
+}
+
+.custom-form .form-group textarea.form-control {
+  height: auto;
+}
+
+.error {
+  margin: 8px 0px;
+  display: none;
+  color: #ff5d48;
+}
+
+#ajaxsuccess {
+  font-size: 16px;
+  width: 100%;
+  display: none;
+  clear: both;
+  margin: 8px 0px;
+}
+
+.error_message {
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #806027;
+  background-color: #fdf1db;
+  border-color: #fdebcd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact-loader {
+  display: none;
+}
+
+#success_page {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#success_page h3 {
+  color: #10c469;
+  font-size: 22px;
+}
+
+/*******************
+    10.cta
+********************/
+.cta {
+  background-image: linear-gradient(120deg, #63e4ec 0%, #3db9dc 100%);
+  border-radius: 8px;
+}
+
+/*******************
+    11.footer
+********************/
+.footer {
+  padding: 30px 0px 5px 0px;
+}
+
+.footer .social-links li a {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 18px;
+  padding: 0px 5px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.footer .social-links li a:hover {
+  color: #ffffff;
+}
+
+/******************
+    12.Responsive
+*******************/
+@media (min-width: 200px) and (max-width: 1199px) {
+  .container-fluid {
+    max-width: 95%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    max-width: 85%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container-fluid {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+  .bg-home {
+    padding: 130px 0px 120px 0px;
+  }
+  .mo-mb-20 {
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .home-title h1 {
+    font-size: 34px;
+  }
+  .pull-none {
+    float: none !important;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
